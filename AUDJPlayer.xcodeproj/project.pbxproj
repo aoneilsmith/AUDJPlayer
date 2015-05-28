@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A07E074D18D38DB400F25CD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07E074C18D38DB400F25CD3 /* UIKit.framework */; };
+		A07E074F18D38DB400F25CD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07E074E18D38DB400F25CD3 /* Foundation.framework */; };
+		A07E075118D38DB400F25CD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07E075018D38DB400F25CD3 /* CoreGraphics.framework */; };
+		A07E075718D38DB400F25CD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A07E075518D38DB400F25CD3 /* InfoPlist.strings */; };
+		A07E075918D38DB400F25CD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A07E075818D38DB400F25CD3 /* main.m */; };
+		A07E075D18D38DB400F25CD3 /* AUDJPlayerAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A07E075C18D38DB400F25CD3 /* AUDJPlayerAppDelegate.mm */; };
+		A07E075F18D38DB400F25CD3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A07E075E18D38DB400F25CD3 /* Default.png */; };
+		A07E076118D38DB400F25CD3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A07E076018D38DB400F25CD3 /* Default@2x.png */; };
+		A07E076318D38DB400F25CD3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A07E076218D38DB400F25CD3 /* Default-568h@2x.png */; };
+		A07E077618D39A8100F25CD3 /* RDFX_NoiseToyz-25.wav in Resources */ = {isa = PBXBuildFile; fileRef = A07E077218D39A8100F25CD3 /* RDFX_NoiseToyz-25.wav */; };
+		A07E077718D39A8100F25CD3 /* RDFX_NoiseToyz-12.wav in Resources */ = {isa = PBXBuildFile; fileRef = A07E077318D39A8100F25CD3 /* RDFX_NoiseToyz-12.wav */; };
+		A07E077818D39A8100F25CD3 /* SB_NSAT2_126_SNARE_05.wav in Resources */ = {isa = PBXBuildFile; fileRef = A07E077418D39A8100F25CD3 /* SB_NSAT2_126_SNARE_05.wav */; };
+		A07E077918D39A8100F25CD3 /* SB_NSAT2_126_FX_13.wav in Resources */ = {isa = PBXBuildFile; fileRef = A07E077518D39A8100F25CD3 /* SB_NSAT2_126_FX_13.wav */; };
+		A07E077C18D39E1B00F25CD3 /* Temptation Sensation.wav in Resources */ = {isa = PBXBuildFile; fileRef = A07E077A18D39E1B00F25CD3 /* Temptation Sensation.wav */; };
+		A07E077D18D39E1B00F25CD3 /* Frolic.wav in Resources */ = {isa = PBXBuildFile; fileRef = A07E077B18D39E1B00F25CD3 /* Frolic.wav */; };
+		A07E078818D3A2E100F25CD3 /* AUDJPlayerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A07E078618D3A2E100F25CD3 /* AUDJPlayerViewController.mm */; };
+		A07E078918D3A2E100F25CD3 /* AUDJPlayerMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07E078718D3A2E100F25CD3 /* AUDJPlayerMainWindow.xib */; };
+		A07E078D18D3B23400F25CD3 /* SB_NSAT2_126_KICK_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = A07E078C18D3B23400F25CD3 /* SB_NSAT2_126_KICK_03.wav */; };
+		A07E079618D4B97F00F25CD3 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07E079318D4B97F00F25CD3 /* MediaPlayer.framework */; };
+		A07E079718D4B97F00F25CD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07E079418D4B97F00F25CD3 /* AVFoundation.framework */; };
+		A07E079818D4B97F00F25CD3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07E079518D4B97F00F25CD3 /* AudioToolbox.framework */; };
+		A09DE95F18D617BC0087B61F /* green_button.png in Resources */ = {isa = PBXBuildFile; fileRef = A09DE95D18D617BC0087B61F /* green_button.png */; };
+		A09DE96018D617BC0087B61F /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = A09DE95E18D617BC0087B61F /* red_button.png */; };
+		A0A457E418DAAAC1004DBB14 /* AudioEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0A457E018DA95C8004DBB14 /* AudioEngine.mm */; };
+		A0A457E518DAAADD004DBB14 /* MeterView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09DE96418D61A2C0087B61F /* MeterView.mm */; };
+		A0A457E618DAAAE8004DBB14 /* AudioWaveView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09DE96218D61A2C0087B61F /* AudioWaveView.mm */; };
+		A0A457EE18DB6AA4004DBB14 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A0A457ED18DB6AA4004DBB14 /* Default.png */; };
+		A0A457F018DB6AEF004DBB14 /* AUDJPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A457EF18DB6AEE004DBB14 /* AUDJPlayerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A07E074918D38DB400F25CD3 /* AUDJPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUDJPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A07E074C18D38DB400F25CD3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A07E074E18D38DB400F25CD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A07E075018D38DB400F25CD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A07E075418D38DB400F25CD3 /* AUDJPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AUDJPlayer-Info.plist"; sourceTree = "<group>"; };
+		A07E075618D38DB400F25CD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A07E075818D38DB400F25CD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A07E075A18D38DB400F25CD3 /* AUDJPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AUDJPlayer-Prefix.pch"; sourceTree = "<group>"; };
+		A07E075B18D38DB400F25CD3 /* AUDJPlayerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUDJPlayerAppDelegate.h; sourceTree = "<group>"; };
+		A07E075C18D38DB400F25CD3 /* AUDJPlayerAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AUDJPlayerAppDelegate.mm; sourceTree = "<group>"; };
+		A07E075E18D38DB400F25CD3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A07E076018D38DB400F25CD3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A07E076218D38DB400F25CD3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A07E077218D39A8100F25CD3 /* RDFX_NoiseToyz-25.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "RDFX_NoiseToyz-25.wav"; sourceTree = SOURCE_ROOT; };
+		A07E077318D39A8100F25CD3 /* RDFX_NoiseToyz-12.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "RDFX_NoiseToyz-12.wav"; sourceTree = SOURCE_ROOT; };
+		A07E077418D39A8100F25CD3 /* SB_NSAT2_126_SNARE_05.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SB_NSAT2_126_SNARE_05.wav; sourceTree = SOURCE_ROOT; };
+		A07E077518D39A8100F25CD3 /* SB_NSAT2_126_FX_13.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SB_NSAT2_126_FX_13.wav; sourceTree = SOURCE_ROOT; };
+		A07E077A18D39E1B00F25CD3 /* Temptation Sensation.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Temptation Sensation.wav"; sourceTree = SOURCE_ROOT; };
+		A07E077B18D39E1B00F25CD3 /* Frolic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Frolic.wav; sourceTree = SOURCE_ROOT; };
+		A07E078518D3A2E100F25CD3 /* AUDJPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUDJPlayerViewController.h; sourceTree = "<group>"; };
+		A07E078618D3A2E100F25CD3 /* AUDJPlayerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AUDJPlayerViewController.mm; sourceTree = "<group>"; };
+		A07E078718D3A2E100F25CD3 /* AUDJPlayerMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AUDJPlayerMainWindow.xib; sourceTree = "<group>"; };
+		A07E078C18D3B23400F25CD3 /* SB_NSAT2_126_KICK_03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SB_NSAT2_126_KICK_03.wav; sourceTree = SOURCE_ROOT; };
+		A07E079318D4B97F00F25CD3 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A07E079418D4B97F00F25CD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A07E079518D4B97F00F25CD3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A09DE95D18D617BC0087B61F /* green_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_button.png; sourceTree = "<group>"; };
+		A09DE95E18D617BC0087B61F /* red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_button.png; sourceTree = "<group>"; };
+		A09DE96118D61A2C0087B61F /* AudioWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioWaveView.h; sourceTree = "<group>"; };
+		A09DE96218D61A2C0087B61F /* AudioWaveView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioWaveView.mm; sourceTree = "<group>"; };
+		A09DE96318D61A2C0087B61F /* MeterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeterView.h; sourceTree = "<group>"; };
+		A09DE96418D61A2C0087B61F /* MeterView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MeterView.mm; sourceTree = "<group>"; };
+		A09DE97218D6210C0087B61F /* AUGraphController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUGraphController.h; path = AUDJPlayer/AUGraphController.h; sourceTree = "<group>"; };
+		A09DE97318D6210C0087B61F /* AUGraphController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AUGraphController.mm; path = AUDJPlayer/AUGraphController.mm; sourceTree = "<group>"; };
+		A0A457C818D7B5E5004DBB14 /* CACFDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CACFDictionary.h; path = PublicUtility/CACFDictionary.h; sourceTree = "<group>"; };
+		A0A457C918D7B5E5004DBB14 /* CAComponentDescription.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAComponentDescription.cpp; path = PublicUtility/CAComponentDescription.cpp; sourceTree = "<group>"; };
+		A0A457CA18D7B5E5004DBB14 /* CAComponentDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAComponentDescription.h; path = PublicUtility/CAComponentDescription.h; sourceTree = "<group>"; };
+		A0A457CB18D7B5E5004DBB14 /* CADebugMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CADebugMacros.h; path = PublicUtility/CADebugMacros.h; sourceTree = "<group>"; };
+		A0A457CC18D7B5E5004DBB14 /* CAMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAMath.h; path = PublicUtility/CAMath.h; sourceTree = "<group>"; };
+		A0A457CD18D7B5E5004DBB14 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAStreamBasicDescription.cpp; path = PublicUtility/CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		A0A457CE18D7B5E5004DBB14 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAStreamBasicDescription.h; path = PublicUtility/CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		A0A457CF18D7B5E5004DBB14 /* CAXException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAXException.cpp; path = PublicUtility/CAXException.cpp; sourceTree = "<group>"; };
+		A0A457D018D7B5E5004DBB14 /* CAXException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAXException.h; path = PublicUtility/CAXException.h; sourceTree = "<group>"; };
+		A0A457DF18DA95C8004DBB14 /* AudioEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AudioEngine.h; path = AUDJPlayer/AudioEngine.h; sourceTree = "<group>"; };
+		A0A457E018DA95C8004DBB14 /* AudioEngine.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AudioEngine.mm; path = AUDJPlayer/AudioEngine.mm; sourceTree = "<group>"; };
+		A0A457ED18DB6AA4004DBB14 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A0A457EF18DB6AEE004DBB14 /* AUDJPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AUDJPlayerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A07E074618D38DB400F25CD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07E074D18D38DB400F25CD3 /* UIKit.framework in Frameworks */,
+				A07E074F18D38DB400F25CD3 /* Foundation.framework in Frameworks */,
+				A07E075118D38DB400F25CD3 /* CoreGraphics.framework in Frameworks */,
+				A07E079618D4B97F00F25CD3 /* MediaPlayer.framework in Frameworks */,
+				A07E079718D4B97F00F25CD3 /* AVFoundation.framework in Frameworks */,
+				A07E079818D4B97F00F25CD3 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A07E074018D38DB400F25CD3 = {
+			isa = PBXGroup;
+			children = (
+				A0A457ED18DB6AA4004DBB14 /* Default.png */,
+				A09DE97218D6210C0087B61F /* AUGraphController.h */,
+				A09DE97318D6210C0087B61F /* AUGraphController.mm */,
+				A0A457DF18DA95C8004DBB14 /* AudioEngine.h */,
+				A0A457E018DA95C8004DBB14 /* AudioEngine.mm */,
+				A07E075218D38DB400F25CD3 /* AUDJPlayer */,
+				A0A457C818D7B5E5004DBB14 /* CACFDictionary.h */,
+				A0A457C918D7B5E5004DBB14 /* CAComponentDescription.cpp */,
+				A0A457CA18D7B5E5004DBB14 /* CAComponentDescription.h */,
+				A0A457CB18D7B5E5004DBB14 /* CADebugMacros.h */,
+				A0A457CC18D7B5E5004DBB14 /* CAMath.h */,
+				A0A457CD18D7B5E5004DBB14 /* CAStreamBasicDescription.cpp */,
+				A0A457CE18D7B5E5004DBB14 /* CAStreamBasicDescription.h */,
+				A0A457CF18D7B5E5004DBB14 /* CAXException.cpp */,
+				A0A457D018D7B5E5004DBB14 /* CAXException.h */,
+				A07E074B18D38DB400F25CD3 /* Frameworks */,
+				A07E074A18D38DB400F25CD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A07E074A18D38DB400F25CD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A07E074918D38DB400F25CD3 /* AUDJPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A07E074B18D38DB400F25CD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A07E079318D4B97F00F25CD3 /* MediaPlayer.framework */,
+				A07E079418D4B97F00F25CD3 /* AVFoundation.framework */,
+				A07E079518D4B97F00F25CD3 /* AudioToolbox.framework */,
+				A07E074C18D38DB400F25CD3 /* UIKit.framework */,
+				A07E074E18D38DB400F25CD3 /* Foundation.framework */,
+				A07E075018D38DB400F25CD3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A07E075218D38DB400F25CD3 /* AUDJPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A07E075B18D38DB400F25CD3 /* AUDJPlayerAppDelegate.h */,
+				A07E075C18D38DB400F25CD3 /* AUDJPlayerAppDelegate.mm */,
+				A07E078518D3A2E100F25CD3 /* AUDJPlayerViewController.h */,
+				A07E078618D3A2E100F25CD3 /* AUDJPlayerViewController.mm */,
+				A07E078718D3A2E100F25CD3 /* AUDJPlayerMainWindow.xib */,
+				A0A457EF18DB6AEE004DBB14 /* AUDJPlayerViewController.xib */,
+				A09DE96118D61A2C0087B61F /* AudioWaveView.h */,
+				A09DE96218D61A2C0087B61F /* AudioWaveView.mm */,
+				A09DE96318D61A2C0087B61F /* MeterView.h */,
+				A09DE96418D61A2C0087B61F /* MeterView.mm */,
+				A07E075318D38DB400F25CD3 /* Supporting Files */,
+				A07E076B18D38F3100F25CD3 /* Resources */,
+			);
+			path = AUDJPlayer;
+			sourceTree = "<group>";
+		};
+		A07E075318D38DB400F25CD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A07E075418D38DB400F25CD3 /* AUDJPlayer-Info.plist */,
+				A07E075518D38DB400F25CD3 /* InfoPlist.strings */,
+				A07E075A18D38DB400F25CD3 /* AUDJPlayer-Prefix.pch */,
+				A07E075818D38DB400F25CD3 /* main.m */,
+				A07E075E18D38DB400F25CD3 /* Default.png */,
+				A07E076018D38DB400F25CD3 /* Default@2x.png */,
+				A07E076218D38DB400F25CD3 /* Default-568h@2x.png */,
+				A09DE95D18D617BC0087B61F /* green_button.png */,
+				A09DE95E18D617BC0087B61F /* red_button.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A07E076B18D38F3100F25CD3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A07E077218D39A8100F25CD3 /* RDFX_NoiseToyz-25.wav */,
+				A07E077318D39A8100F25CD3 /* RDFX_NoiseToyz-12.wav */,
+				A07E077418D39A8100F25CD3 /* SB_NSAT2_126_SNARE_05.wav */,
+				A07E078C18D3B23400F25CD3 /* SB_NSAT2_126_KICK_03.wav */,
+				A07E077518D39A8100F25CD3 /* SB_NSAT2_126_FX_13.wav */,
+				A07E077A18D39E1B00F25CD3 /* Temptation Sensation.wav */,
+				A07E077B18D39E1B00F25CD3 /* Frolic.wav */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A07E074818D38DB400F25CD3 /* AUDJPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A07E076618D38DB400F25CD3 /* Build configuration list for PBXNativeTarget "AUDJPlayer" */;
+			buildPhases = (
+				A07E074518D38DB400F25CD3 /* Sources */,
+				A07E074618D38DB400F25CD3 /* Frameworks */,
+				A07E074718D38DB400F25CD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AUDJPlayer;
+			productName = AUDJPlayer;
+			productReference = A07E074918D38DB400F25CD3 /* AUDJPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A07E074118D38DB400F25CD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AUDJPlayer;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Andrew O'Neil-Smith";
+			};
+			buildConfigurationList = A07E074418D38DB400F25CD3 /* Build configuration list for PBXProject "AUDJPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A07E074018D38DB400F25CD3;
+			productRefGroup = A07E074A18D38DB400F25CD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A07E074818D38DB400F25CD3 /* AUDJPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A07E074718D38DB400F25CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07E075718D38DB400F25CD3 /* InfoPlist.strings in Resources */,
+				A0A457F018DB6AEF004DBB14 /* AUDJPlayerViewController.xib in Resources */,
+				A07E078918D3A2E100F25CD3 /* AUDJPlayerMainWindow.xib in Resources */,
+				A07E075F18D38DB400F25CD3 /* Default.png in Resources */,
+				A07E076118D38DB400F25CD3 /* Default@2x.png in Resources */,
+				A07E076318D38DB400F25CD3 /* Default-568h@2x.png in Resources */,
+				A07E077618D39A8100F25CD3 /* RDFX_NoiseToyz-25.wav in Resources */,
+				A07E077718D39A8100F25CD3 /* RDFX_NoiseToyz-12.wav in Resources */,
+				A07E077818D39A8100F25CD3 /* SB_NSAT2_126_SNARE_05.wav in Resources */,
+				A07E077918D39A8100F25CD3 /* SB_NSAT2_126_FX_13.wav in Resources */,
+				A07E077C18D39E1B00F25CD3 /* Temptation Sensation.wav in Resources */,
+				A07E077D18D39E1B00F25CD3 /* Frolic.wav in Resources */,
+				A07E078D18D3B23400F25CD3 /* SB_NSAT2_126_KICK_03.wav in Resources */,
+				A09DE95F18D617BC0087B61F /* green_button.png in Resources */,
+				A09DE96018D617BC0087B61F /* red_button.png in Resources */,
+				A0A457EE18DB6AA4004DBB14 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A07E074518D38DB400F25CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07E075918D38DB400F25CD3 /* main.m in Sources */,
+				A07E075D18D38DB400F25CD3 /* AUDJPlayerAppDelegate.mm in Sources */,
+				A07E078818D3A2E100F25CD3 /* AUDJPlayerViewController.mm in Sources */,
+				A0A457E418DAAAC1004DBB14 /* AudioEngine.mm in Sources */,
+				A0A457E518DAAADD004DBB14 /* MeterView.mm in Sources */,
+				A0A457E618DAAAE8004DBB14 /* AudioWaveView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A07E075518D38DB400F25CD3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A07E075618D38DB400F25CD3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A07E076418D38DB400F25CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A07E076518D38DB400F25CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A07E076718D38DB400F25CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AUDJPlayer/AUDJPlayer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = "AUDJPlayer/AUDJPlayer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A07E076818D38DB400F25CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AUDJPlayer/AUDJPlayer-Prefix.pch";
+				INFOPLIST_FILE = "AUDJPlayer/AUDJPlayer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A07E074418D38DB400F25CD3 /* Build configuration list for PBXProject "AUDJPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A07E076418D38DB400F25CD3 /* Debug */,
+				A07E076518D38DB400F25CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A07E076618D38DB400F25CD3 /* Build configuration list for PBXNativeTarget "AUDJPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A07E076718D38DB400F25CD3 /* Debug */,
+				A07E076818D38DB400F25CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A07E074118D38DB400F25CD3 /* Project object */;
+}
